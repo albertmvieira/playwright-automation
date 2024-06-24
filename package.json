@@ -1,0 +1,23 @@
+{
+  "name": "playwrightautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "NetworkTest": "npx playwright test tests/NetworkTest.spec.js --headed --project=chromium",
+    "testWebAPI": "npx playwright test tests/WebApiPart1.spec.js --headed",
+    "webTest": "npx playwright test --grep @Web --project=chromium",
+    "webTestFirefox": "npx playwright test --grep @Web --project=firefox",
+    "webTestAllure": " npx playwright test --grep @Web --project=chromium --reporter=line,allure-playwright"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "allure-playwright": "^2.15.1"
+  },
+  "dependencies": {
+    "exceljs": "^4.4.0"
+  }
+}
